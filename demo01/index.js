@@ -12,7 +12,7 @@ mongoose.connect('mongodb://localhost:27017/mongoose_study', {
 })
     //handle initial connection errors
     .catch(error => {
-      console.error('database connect error!!!!')
+      console.error('database initial connect error!!!!')
     })
 
 const conn = mongoose.connection
@@ -28,12 +28,13 @@ app.use(bodyParser.json())
 //parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({extended: false}))
 
+//use router
 app.use('/cat', cat)
 
 
 //handle errors after initial connection was established
 conn.on('connected', () => {
-  console.log('db connect success')
+  console.log('database connect success')
 
   const port = 5400
   app.listen(port, () => {

@@ -2,6 +2,8 @@ const mongoose = require('mongoose')
 
 /*
 * Validators
+*   1.built-in
+*   2.self-defined
 * */
 const BreakfastSchema = new mongoose.Schema({
   /*eggs: {
@@ -20,7 +22,7 @@ const BreakfastSchema = new mongoose.Schema({
       return this.bacon > 3;
     }
   },*/
-  //self defined validator rules(boolean)
+  //self-defined validator rules(boolean)
   age: {
     type: Number,
     validate: {
@@ -45,4 +47,5 @@ const BreakfastSchema = new mongoose.Schema({
 })
 
 const BreakfastModel = mongoose.model('Breakfast', BreakfastSchema) //breakfasts表
+
 module.exports = BreakfastModel

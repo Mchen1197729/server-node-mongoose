@@ -4,7 +4,7 @@ const bodyParser = require('body-parser')
 
 const mongoose = require('mongoose')
 
-const breakfast = require('./router/breakfast')
+const tank = require('./router/tank')
 
 
 mongoose.connect('mongodb://localhost:27017/mongoose_study', {
@@ -29,7 +29,7 @@ app.use(bodyParser.json())
 //parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({extended: false}))
 
-app.use('/breakfast', breakfast)
+app.use('/tank', tank)
 
 //handle errors after initial connection was established
 conn.on('connected', () => {

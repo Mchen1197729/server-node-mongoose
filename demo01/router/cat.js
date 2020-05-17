@@ -39,7 +39,7 @@ router.post('/add', (req, res) => {
 router.get('/one', (req, res) => {
   console.log(req.query)
   const {name, age, hobby} = req.query
-  //check the value
+  //todo -> check the value
   CatModel.find({age: Number(age)}, (error, cats) => {
     console.log(error, cats)
   })
