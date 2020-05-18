@@ -2,6 +2,10 @@ const router = require('express').Router()
 
 const StarModel = require('../models/StarModel')
 
+StarModel.find((error, stars) => {
+  stars.forEach(star => ([star.id == star._id, star.id === star._id]))//[true,false]
+})
+
 //1.create
 router.post('/test1', (req, res) => {
   const {name, age, gender, married} = req.body

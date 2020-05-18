@@ -10,7 +10,10 @@
     "dev02": "nodemon demo02/index.js",
     "dev03": "nodemon demo03-Schema/index.js",
     "dev04": "nodemon demo04-Model/index.js",
-    "dev05": "nodemon demo05-Query/index.js"
+    "dev05": "nodemon demo05-Query/index.js",
+    "dev06": "nodemon demo06-Schema-indexes/index.js",
+    "dev07": "nodemon demo07-SchemaTypes/index.js",
+    "dev08": "nodemon demo08-validate/index.js"
   },
   "keywords": [],
   "author": "",
