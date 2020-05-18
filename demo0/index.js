@@ -75,7 +75,8 @@ connection.on('connected', () => {
   console.log(new mongoose.Types.ObjectId())
   console.log(new mongoose.Types.ObjectId())
   console.log(new mongoose.Types.ObjectId())
-  /*const per = new CommentModel({
+
+  const per = new CommentModel({
     name: {
       first: 'Kobe',
       last: 'Brant'
@@ -84,9 +85,9 @@ connection.on('connected', () => {
       {body: '凌晨四点的洛杉矶', id: 1}
     ]
   })
-  console.log(per.fullName)
-  per.fullName = 'Lebron--James'
-  per.save()*/
+  console.log('per:', per)
+  //per.fullName = 'Lebron--James'
+  //per.save()
 
   app.listen(port, () => {
     console.log(`app is running at port ${port}`)

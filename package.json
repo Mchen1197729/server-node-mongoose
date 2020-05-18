@@ -8,7 +8,7 @@
     "dev00": "nodemon demo00/index.js",
     "dev01": "nodemon demo01/index.js",
     "dev02": "nodemon demo02/index.js",
-    "dev03": "nodemon demo03/index.js",
+    "dev03": "nodemon demo03-Schema/index.js",
     "dev04": "nodemon demo04-Model/index.js",
     "dev05": "nodemon demo05-Query/index.js"
   },
